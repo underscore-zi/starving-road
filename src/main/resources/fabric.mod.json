@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "starving-road",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "name": "Starving Road Coalition",
+  "description": "An addon for work on the starving road.",
   "authors": [
-    "seasnail"
+    "__zi"
   ],
   "contact": {
-    "sources": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "sources": "https://github.com/underscore-zi/starving-road"
   },
   "icon": "assets/template/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "com.example.us.ri0.starving.AddonTemplate"
     ]
   },
   "mixins": [
-    "addon-template.mixins.json"
+
   ],
   "custom": {
-    "meteor-client:color": "225,25,25"
+    "meteor-client:color": "65,30,0"
   },
   "depends": {
     "java": ">=21",
-    "minecraft": ["${mc_version}", "1.21.7", "1.21.6"],
+    "minecraft": ["${mc_version}", "1.21.7", "1.21.6", "1.21.5", "1.21.4"],
     "meteor-client": "*"
   }
 }
