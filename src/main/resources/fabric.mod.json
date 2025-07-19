@@ -14,7 +14,7 @@
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.us.ri0.starving.AddonTemplate"
+      "us.ri0.starving.AddonTemplate"
     ]
   },
   "mixins": [

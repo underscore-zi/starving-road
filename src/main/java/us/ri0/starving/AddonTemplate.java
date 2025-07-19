@@ -1,4 +1,4 @@
-package com.example.us.ri0.starving;
+package us.ri0.starving;
 
 import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.GithubRepo;
@@ -6,6 +6,7 @@ import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.meteorclient.systems.modules.Modules;
 import org.slf4j.Logger;
+import us.ri0.starving.modules.Bridger;
 import us.ri0.starving.modules.Pather;
 
 public class AddonTemplate extends MeteorAddon {
@@ -15,6 +16,7 @@ public class AddonTemplate extends MeteorAddon {
     @Override
     public void onInitialize() {
         Modules.get().add(new Pather());
+        Modules.get().add(new Bridger());
     }
 
     @Override
