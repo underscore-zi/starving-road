@@ -25,7 +25,6 @@ public class Bridger extends Module {
         super(AddonTemplate.CATEGORY, "Bridger", "Scaffolding, but worse.");
     }
 
-
     private HashSet<BlockPos> recentPlacements = new HashSet<>();
     private final Color innerColor = new Color(150, 150, 150, 40);
     private final Color outerColor = new Color(150, 150, 150, 200);
@@ -179,5 +178,10 @@ public class Bridger extends Module {
             (int)pos.z
         );
         return block;
+    }
+
+    @Override
+    public void onActivate() {
+        recentPlacements.clear();
     }
 }
